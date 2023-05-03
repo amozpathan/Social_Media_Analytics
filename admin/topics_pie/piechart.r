@@ -1,0 +1,16 @@
+library(RMySQL)
+mydb = dbConnect(MySQL(), user='root', password='', dbname='social_network', host='localhost')
+dbListTables(mydb)
+rs1 = dbSendQuery(mydb, "select * from posts")
+post = fetch(rs1, n=-1)
+topic_count<-table(post$topic_id)
+dbClearResult(rs1)
+rs1 = dbSendQuery(mydb, "select * from topics")
+topics = fetch(rs1, n=-1)
+topics<-topics$topic_title
+#col=colours[633:655]
+colours<-colours()
+png(filename="piechart.png",width=1000,height = 1000)
+pie(table(post$topic_id),c("other",topics),radius = 1,col=c("brown","green","yellow","sky blue","pink","gray","red","orange","cyan"),main="TOPICS GRAPH")
+dev.off()
+#barplot(topic_count,)

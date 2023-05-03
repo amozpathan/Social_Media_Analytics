@@ -1,0 +1,300 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color:#F8F8F8;
+}
+
+.container {
+	margin:0; 
+	padding:0; 
+	background-color:#F8F8F8;
+}
+#head_wrap{
+	width:100%; 
+	height:55px;
+	margin:0 auto;
+	border-bottom:2px solid #223B3F;
+	padding:10px; 
+	background:#4ABDAC;
+}
+
+#header {
+	margin:0 auto;
+	width:1000px;
+	height:35px;
+}
+#menu {
+	line-height:35px; 
+	padding:0; 
+	margin:0;
+	float:left;
+}
+
+#menu li {
+	display:inline; 
+	list-style:none;
+}
+#menu a {
+	margin:5px; 
+	padding:5px; 
+	text-decoration:none;
+	color:#BF3F55; 
+	font-size:20px;
+	font-weight:bold;
+}
+#menu a:hover{
+	color:#FF3B3F; 
+	font-weight:bolder;
+	text-decoration:underline;
+}
+#menu strong {
+	font-size:20px; 
+	text-decoration:underline;
+	color:brown;
+}
+#form1 {
+	float:right;
+	line-height:35px;
+	padding-top:3px;
+}
+
+.content {
+	width:1000px; 
+	margin:0 auto;
+}
+#user_timeline {
+	background:#F8F8F8;
+	width:250px; 
+	float:left; 
+	height:600px;
+	border-right:1px solid #F8F8F8;
+}
+#user_details {
+	padding:10px; 
+}
+#user_details img{
+	border:2px solid black; 
+	border-radius:20px; 
+}
+#user_details p {
+	margin-bottom:10px;
+	padding:5px;
+}
+#user_details a {
+	color:#FF3B3F; 
+	font-size:20px; 
+	text-decoration:none;
+}
+#user_details a:hover {
+	color:#FF3B3F; 
+	font-size:20px; 
+	text-decoration:underline; 
+	font-weight:bolder;
+}
+#user_mention{
+	background:#E6E6FA;
+	border:2px solid black; 
+	border-radius:20px; 
+	width:200px;
+	margin:0 auto;
+	padding:5px;
+}
+#content_timeline {
+	float:right;
+	width:700px; 
+	padding:10px;
+}
+.ff input {margin-bottom:5px;}
+.ff select {margin-bottom:5px;}
+
+#f input{
+	padding:7px; 
+	border:1px solid black; 
+	border-radius:5px;
+	font-weight:bolder;
+}
+#f textarea{
+	padding:8px; 
+	border:1px solid black; 
+	border-radius:5px;
+	font-weight:bolder;
+}
+#f select{
+	padding:8px; 
+	border:1px solid black; 
+	border-radius:5px;
+	font-weight:bolder;
+}
+
+#f h2 {
+	color:gray; 
+	font-family:Sansational;
+}
+
+#pagination {
+	margin-top:20px;
+}
+#pagination a{
+	color:#FF3B3F; 
+	text-decoration:none; 
+	font-size:18px; 
+	margin:5px;
+}
+#pagination a:hover{
+	color:#FF3B3F; 
+	font-weight:bold;
+}
+
+#posts {
+	width:600px; 
+	background:white; 
+	padding:10px; 
+	line-height:20px;
+	border:1px solid black;
+	text-align:justify;
+}
+#posts img {
+	float:left; 
+	padding-top:5px; 
+	padding-right:10px;
+	border:1px solid white; 
+	border-radius:70%;
+}
+#posts h3 {
+	color:black;
+}
+#posts button {
+	padding:5px;
+	border:1px solid black; 
+	border-radius:5px;
+}
+#posts button:hover{
+	background:#FF3B3F;
+	color:white;
+}
+#reply textarea{
+	padding:8px; 
+	border:1px solid black; 
+	border-radius:5px;
+	font-weight:bolder;
+	background:white;
+}
+#reply input{
+	padding:8px; 
+	border:1px solid black; 
+	border-radius:5px;
+	font-weight:bolder;
+}
+#reply input:hover{
+	padding:8px; 
+	border:1px solid black; 
+	border-radius:5px;
+	font-weight:bolder;
+	background:#F5F5DC;
+}
+#comments {
+	background:white;
+	padding:5px;
+	width:600px;
+	border:2px solid black;
+}
+#comments span {
+	color:white;
+}
+#comments h3 {
+	color:black;
+}
+#comments p {
+	line-height:20px; 
+	font-size:16px;
+	padding:5px;
+}
+
+#user_profile {
+	padding:10px; 
+	margin-left:50px; 
+	background:#FF3B3F; 
+	height:300px; 
+	border:2px solid black; 
+	border-radius:10px;
+}	
+#user_profile img {
+	border:2px solid gray; 
+	float:right;
+	border:2px solid black; 
+	border-radius:10px;
+}
+#user_profile p{margin:5px;}
+#user_profile button 
+{
+		margin-top:10px;
+		
+}
+#user_profile h3 { color:blue;}
+
+#msg {
+	padding:10px; 
+	line-height:20px; 
+	background:#F8F8F8; 
+	margin:0 auto;
+}
+#msg th {
+	border:3px solid black;
+	background:white;
+}
+#msg table, td {
+
+	padding:10px;
+}
+
+#msg a {
+	color:#FF3B3F; 
+	text-decoration:none; 
+	font-size:18px; 
+}
+#msg a:hover{
+	color:#FF3B3F;
+	font-weight:bolder;
+	text-decoration:underline;
+}
+#footer{
+	width:100%; 
+	height:40px; 
+	padding:10px; 
+	background:#4ABDAC;
+	border-top:5px solid #FF3B3F;
+	clear:both;
+}
+#footer h2{
+
+	text-align:center;
+	padding-top:3px; 
+	color:white;
+
+}
